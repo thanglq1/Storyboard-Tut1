@@ -15,6 +15,7 @@
 		07EDD2931EB0944500D4BE50 /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EDD2921EB0944500D4BE50 /* PlayersViewController.swift */; };
 		07EDD2951EB094F700D4BE50 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EDD2941EB094F700D4BE50 /* Player.swift */; };
 		07EDD2971EB0A06700D4BE50 /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EDD2961EB0A06700D4BE50 /* PlayerCell.swift */; };
+		DFE9AD791EB0DF6900DEDE8D /* PlayerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE9AD781EB0DF6900DEDE8D /* PlayerDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		07EDD2921EB0944500D4BE50 /* PlayersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
 		07EDD2941EB094F700D4BE50 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		07EDD2961EB0A06700D4BE50 /* PlayerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
+		DFE9AD781EB0DF6900DEDE8D /* PlayerDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				07EDD2801EB07C7700D4BE50 /* AppDelegate.swift */,
 				07EDD2821EB07C7700D4BE50 /* ViewController.swift */,
 				07EDD2921EB0944500D4BE50 /* PlayersViewController.swift */,
+				DFE9AD781EB0DF6900DEDE8D /* PlayerDetailViewController.swift */,
 				07EDD2961EB0A06700D4BE50 /* PlayerCell.swift */,
 				07EDD2841EB07C7700D4BE50 /* Main.storyboard */,
 				07EDD2871EB07C7700D4BE50 /* Assets.xcassets */,
@@ -150,6 +153,7 @@
 			files = (
 				07EDD2951EB094F700D4BE50 /* Player.swift in Sources */,
 				07EDD2831EB07C7700D4BE50 /* ViewController.swift in Sources */,
+				DFE9AD791EB0DF6900DEDE8D /* PlayerDetailViewController.swift in Sources */,
 				07EDD2811EB07C7700D4BE50 /* AppDelegate.swift in Sources */,
 				07EDD2931EB0944500D4BE50 /* PlayersViewController.swift in Sources */,
 				07EDD2971EB0A06700D4BE50 /* PlayerCell.swift in Sources */,
@@ -278,6 +282,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Storyboard Tut1/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "codepro.Storyboard-Tut1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -290,6 +295,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Storyboard Tut1/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "codepro.Storyboard-Tut1";
 				PRODUCT_NAME = "$(TARGET_NAME)";

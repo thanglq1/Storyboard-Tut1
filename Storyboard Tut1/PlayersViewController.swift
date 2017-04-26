@@ -61,6 +61,24 @@ class PlayersViewController: UITableViewController {
         return 72.0
     }
 
+    
+    @IBAction func cancelPlayerViewController(segue: UIStoryboardSegue) {
+        print("cancel clicked")
+    }
+    
+    @IBAction func savePlayerDetail(segue: UIStoryboardSegue) {
+        print("save clicked")
+        if let playerDetailViewController = segue.source as? PlayerDetailViewController {
+            if let player = playerDetailViewController.player {
+                players.append(player)
+                let indexPath = NSIndexPath(row: players.count - 1, section: 0)
+                
+                tableView.insertRows(at: [indexPath as IndexPath], with: UITableViewRowAnimation.automatic)
+//                tableView.reloadData()
+            }
+        }
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
