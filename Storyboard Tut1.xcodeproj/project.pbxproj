@@ -12,6 +12,8 @@
 		07EDD2861EB07C7700D4BE50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07EDD2841EB07C7700D4BE50 /* Main.storyboard */; };
 		07EDD2881EB07C7700D4BE50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07EDD2871EB07C7700D4BE50 /* Assets.xcassets */; };
 		07EDD28B1EB07C7700D4BE50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07EDD2891EB07C7700D4BE50 /* LaunchScreen.storyboard */; };
+		07EDD2931EB0944500D4BE50 /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EDD2921EB0944500D4BE50 /* PlayersViewController.swift */; };
+		07EDD2951EB094F700D4BE50 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EDD2941EB094F700D4BE50 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		07EDD2871EB07C7700D4BE50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07EDD28A1EB07C7700D4BE50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07EDD28C1EB07C7700D4BE50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07EDD2921EB0944500D4BE50 /* PlayersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
+		07EDD2941EB094F700D4BE50 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +60,12 @@
 			children = (
 				07EDD2801EB07C7700D4BE50 /* AppDelegate.swift */,
 				07EDD2821EB07C7700D4BE50 /* ViewController.swift */,
+				07EDD2921EB0944500D4BE50 /* PlayersViewController.swift */,
 				07EDD2841EB07C7700D4BE50 /* Main.storyboard */,
 				07EDD2871EB07C7700D4BE50 /* Assets.xcassets */,
 				07EDD2891EB07C7700D4BE50 /* LaunchScreen.storyboard */,
 				07EDD28C1EB07C7700D4BE50 /* Info.plist */,
+				07EDD2941EB094F700D4BE50 /* Player.swift */,
 			);
 			path = "Storyboard Tut1";
 			sourceTree = "<group>";
@@ -90,6 +96,9 @@
 		07EDD2751EB07C7700D4BE50 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					labe,
+				);
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = ThangLQ;
@@ -136,8 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07EDD2951EB094F700D4BE50 /* Player.swift in Sources */,
 				07EDD2831EB07C7700D4BE50 /* ViewController.swift in Sources */,
 				07EDD2811EB07C7700D4BE50 /* AppDelegate.swift in Sources */,
+				07EDD2931EB0944500D4BE50 /* PlayersViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +312,7 @@
 				07EDD2911EB07C7700D4BE50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
