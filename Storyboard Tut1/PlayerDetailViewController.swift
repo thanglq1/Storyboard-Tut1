@@ -16,6 +16,21 @@ class PlayerDetailViewController: UITableViewController {
     
     var player: Player?
     
+    var gameNameSelected: String = "Chess" {
+        didSet {
+            detailLabel.text = gameNameSelected
+        }
+    }
+    
+    @IBAction func updateGameNameSelected(segue: UIStoryboardSegue) {
+        print("updateGameNameSelected")
+        if let gamePickerViewController = segue.source as? GamePickerViewController {
+            if let gameName = gamePickerViewController.selectedGameName {
+                gameNameSelected = gameName
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -39,7 +54,7 @@ class PlayerDetailViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "SavePlayerDetail" {
-            player = Player(name: playerNameTextField.text, game: "Chess", rating: 1)
+            player = Player(name: playerNameTextField.text, game: gameNameSelected, rating: 1)
         }
     }
     
